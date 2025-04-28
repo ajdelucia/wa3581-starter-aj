@@ -29,7 +29,7 @@ resource random_string suffix {
 }
 
 resource aws_s3_bucket learning_bucket {
-    bucket = "lab01_learning_bucket_${random_string.suffix.result}"
+    bucket = "lab01-learning-bucket-${random_string.suffix.result}"
 
     tags = {
       Name = "TF Advanced Lab 1 Bucket"
